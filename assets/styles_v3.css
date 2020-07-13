@@ -1,0 +1,99 @@
+body{
+  color: white;
+  /* margin: 2em; */
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.container-grid{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2em;
+}
+
+.container-input{
+  height: 70%;
+  /* grid-area: inputs; */
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+
+  display: inline-grid;
+  border: 1.5px solid white;
+}
+
+.container-output{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 1em; */
+  border: 1.5px solid white;
+  grid-auto-rows: minmax(5px, auto);
+}
+
+div{
+  border-radius: 10px;
+  /* color: black; */
+}
+
+/* --------------------------- */
+/* CONTAINER INPUT PARAMETERS */
+
+#header-input{
+  color: white;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown{
+  /* margin: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  /* align-items: center; */
+}
+
+.Input{
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 30px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+#button_run{
+  background-color: #d62828;
+  border: 1.5px solid black;
+  font-weight: bold;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* END OF CONTAINER INPUT PARAMETERS */
+/* --------------------------------- */
+
+#header-output{
+  color: white;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 1/3;
+}
+
+#text-percentiles{
+  height: 300px;
+  margin: 2em;
+}
+
+#plot-bettors-history{
+  height: 300px;
+  grid-column: 1/3;
+  margin: 3em;
+}
